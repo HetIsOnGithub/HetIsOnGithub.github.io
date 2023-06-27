@@ -4,7 +4,7 @@ const moviesContainer = document.getElementById('movies-container');
 const movies = [
   {
     title: 'Movie 1',
-    image: 'https://raw.githubusercontent.com/HetIsOnGithub/hetisongithub/main/img/fastXthumb.jpg',
+    image: 'img/fastXthumb.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   },
   {
