@@ -2,15 +2,72 @@
 <html>
 <head>
   <title>Movies Website</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    #movies-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .movie-card {
+      width: 250px;
+      background-color: #f5f5f5;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .movie-card h2 {
+      margin-top: 0;
+    }
+
+    .movie-card p {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Movies Website</h1>
   </header>
 
-  <div id="movies-container"></div>
-
-  <script src="script.js"></script>
+  <div id="movies-container">
+    <div class="movie-card">
+      <img src="movie1.jpg" alt="Movie 1">
+      <h2>Movie 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="movie-card">
+      <img src="movie2.jpg" alt="Movie 2">
+      <h2>Movie 2</h2>
+      <p>Nullam euismod nunc in lacus volutpat, sit amet dapibus lectus mattis.</p>
+    </div>
+    <div class="movie-card">
+      <img src="movie3.jpg" alt="Movie 3">
+      <h2>Movie 3</h2>
+      <p>Fusce rutrum leo nec lacinia feugiat. Sed non nulla et nisl mattis tincidunt.</p>
+    </div>
+    <!-- Add more movie cards as needed -->
+  </div>
 </body>
 </html>
