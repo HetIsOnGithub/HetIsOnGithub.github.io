@@ -44,18 +44,50 @@
     .movie-card p {
       margin-bottom: 0;
     }
+
+    #search-form {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #search-form input[type="text"] {
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+
+    #search-form button[type="submit"] {
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+
+    .hidden {
+      display: none;
+    }
   </style>
+  <script>
+    function handleSearch(event) {
+      event.preventDefault();
+      const query = document.getElementById('search-input').value.toLowerCase();
+      // Redirect to a new page and pass the search query as a parameter
+      window.location.href = "/search-results.html?query=" + encodeURIComponent(query);
+    }
+  </script>
 </head>
 <body>
   <header>
     <h1>Movies Website</h1>
+    <form id="search-form" onsubmit="handleSearch(event)">
+      <input id="search-input" type="text" name="query" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
   </header>
 
   <div id="movies-container">
     <div class="movie-card">
       <a href="fastXdownload.html">
-      <img src="img/fastXthumb.jpg" alt="Movie 1">
-      <p>Download Fast X (2023) Dual Audio {Hindi-English} WeB-DL 480p [420MB] || 720p [1.1GB] || 1080p [2.6GB]</p></a>
+        <img src="img/fastXthumb.jpg" alt="Movie 1">
+        <p>Download Fast X (2023) Dual Audio {Hindi-English} WeB-DL 480p [420MB] || 720p [1.1GB] || 1080p [2.6GB]</p>
+      </a>
     </div>
     <div class="movie-card">
       <img src="movie2.jpg" alt="Movie 2">
